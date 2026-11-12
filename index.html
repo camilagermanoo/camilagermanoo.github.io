@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila | Desenvolvedora Web</title>
+  <meta name="description" content="Portfólio e currículo de Camila, desenvolvedora web formada em Análise e Desenvolvimento de Sistemas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <span class="blob blob--primary"></span>
+    <span class="blob blob--secondary"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">camila<span>.dev</span></a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#formacao" data-i18n="nav.education">Formação</a></li>
+        <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Mudar idioma">
+          <span data-lang="pt">PT</span>
+          <span data-lang="en">EN</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <p class="hero__badge reveal">
+        <span class="status-dot"></span>
+        <span data-i18n="hero.badge">Disponível para novas oportunidades</span>
+      </p>
+      <h1 class="hero__title reveal">
+        <span data-i18n="hero.greeting">Olá, eu sou a</span>
+        <span class="gradient-text">Camila</span>
+      </h1>
+      <p class="hero__role reveal" data-i18n="hero.role">Desenvolvedora Web</p>
+      <p class="hero__description reveal" data-i18n="hero.description">
+        Formada em Análise e Desenvolvimento de Sistemas, crio interfaces modernas, acessíveis e responsivas com HTML, CSS, JavaScript e TypeScript.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#projetos" class="button button--primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+        <a href="#contato" class="button button--ghost" data-i18n="hero.ctaContact">Entrar em contato</a>
+      </div>
+      <div class="hero__social reveal">
+        <a href="https://github.com/camilagermanoo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="mailto:camyrodrigues23@gmail.com" aria-label="E-mail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4 7.3V17h16V7.3l-8 4.9ZM5.3 7 12 11.1 18.7 7H5.3Z"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container" id="sobre">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">01</span>
+        <h2 class="section__title" data-i18n="about.title">Sobre mim</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p data-i18n="about.p1">
+            Sou desenvolvedora web formada em Análise e Desenvolvimento de Sistemas, com experiência em desenvolvimento no Tribunal de Contas da União e em suporte de TI no Serpro.
+          </p>
+          <p data-i18n="about.p2">
+            Gosto de transformar ideias em produtos digitais bem feitos, com código organizado e atenção aos detalhes. Estou sempre estudando para evoluir como profissional.
+          </p>
+        </div>
+        <ul class="about__highlights">
+          <li class="card highlight reveal">
+            <strong>1,5</strong>
+            <span data-i18n="about.h1">anos de estágio em desenvolvimento</span>
+          </li>
+          <li class="card highlight reveal">
+            <strong>ADS</strong>
+            <span data-i18n="about.h2">graduação concluída</span>
+          </li>
+          <li class="card highlight reveal">
+            <strong>PT · EN</strong>
+            <span data-i18n="about.h3">site disponível em dois idiomas</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="experiencia">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">02</span>
+        <h2 class="section__title" data-i18n="experience.title">Experiência</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="card timeline__card">
+            <div class="timeline__top">
+              <h3 data-i18n="experience.tcu.role">Estagiária de Desenvolvimento</h3>
+              <span class="tag" data-i18n="experience.tcu.period">1 ano e 6 meses</span>
+            </div>
+            <p class="timeline__company">Tribunal de Contas da União (TCU)</p>
+            <p data-i18n="experience.tcu.description">
+              Atuação no desenvolvimento e na manutenção de sistemas web, colaborando com a equipe em novas funcionalidades e melhorias.
+            </p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="card timeline__card">
+            <div class="timeline__top">
+              <h3 data-i18n="experience.serpro.role">Assistência de TI</h3>
+            </div>
+            <p class="timeline__company">Serpro</p>
+            <p data-i18n="experience.serpro.description">
+              Suporte técnico a usuários, diagnóstico e resolução de problemas de hardware, software e rede.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="formacao">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">03</span>
+        <h2 class="section__title" data-i18n="education.title">Formação</h2>
+      </div>
+      <div class="education">
+        <article class="card education__card reveal">
+          <span class="education__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6.82 9.95v4.05L12 21l6.82-4v-4.05L12 16.68l-6.82-3.73Z"/></svg>
+          </span>
+          <h3 data-i18n="education.degree.title">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+          <p data-i18n="education.degree.status">Graduação concluída</p>
+        </article>
+        <article class="card education__card reveal">
+          <span class="education__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6l1 2h2v2H7v-2h2l1-2H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1 2v9h14V6H5Z"/></svg>
+          </span>
+          <h3 data-i18n="education.courses.title">Cursos na Alura</h3>
+          <p data-i18n="education.courses.description">Formações e cursos em desenvolvimento web, front-end e boas práticas de programação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="habilidades">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">04</span>
+        <h2 class="section__title" data-i18n="skills.title">Habilidades</h2>
+      </div>
+      <ul class="skills">
+        <li class="card skill reveal" style="--skill-color: #e34f26">
+          <span class="skill__badge">HTML</span>
+          <span class="skill__name">HTML5</span>
+        </li>
+        <li class="card skill reveal" style="--skill-color: #2965f1">
+          <span class="skill__badge">CSS</span>
+          <span class="skill__name">CSS3</span>
+        </li>
+        <li class="card skill reveal" style="--skill-color: #f7df1e">
+          <span class="skill__badge">JS</span>
+          <span class="skill__name">JavaScript</span>
+        </li>
+        <li class="card skill reveal" style="--skill-color: #3178c6">
+          <span class="skill__badge">TS</span>
+          <span class="skill__name">TypeScript</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section container" id="projetos">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">05</span>
+        <h2 class="section__title" data-i18n="projects.title">Projetos</h2>
+      </div>
+      <div class="projects">
+        <article class="card project project--placeholder reveal">
+          <p class="project__label" data-i18n="projects.soon">Em breve</p>
+          <h3 data-i18n="projects.placeholderTitle">Novos projetos chegando</h3>
+          <p data-i18n="projects.placeholderDescription">Esta seção vai reunir os projetos que desenvolvi, com tecnologias utilizadas e links para o código e para a versão online.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contato">
+      <div class="card contact reveal">
+        <h2 class="contact__title" data-i18n="contact.title">Vamos conversar?</h2>
+        <p class="contact__text" data-i18n="contact.text">Estou aberta a oportunidades, projetos e trocas de conhecimento. Fique à vontade para entrar em contato.</p>
+        <div class="contact__links">
+          <a href="mailto:camyrodrigues23@gmail.com" class="button button--primary">camyrodrigues23@gmail.com</a>
+          <a href="https://github.com/camilagermanoo" class="button button--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span id="year"></span> Camila. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
