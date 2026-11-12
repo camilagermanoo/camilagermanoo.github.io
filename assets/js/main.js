@@ -1,6 +1,6 @@
 const translations = {
   pt: {
-    "meta.title": "Camila | Desenvolvedora Web",
+    "meta.title": "Camila Rodrigues | Desenvolvedora Web",
     "nav.about": "Sobre",
     "nav.experience": "Experiência",
     "nav.education": "Formação",
@@ -40,7 +40,7 @@ const translations = {
     "footer.rights": "Todos os direitos reservados."
   },
   en: {
-    "meta.title": "Camila | Web Developer",
+    "meta.title": "Camila Rodrigues | Web Developer",
     "nav.about": "About",
     "nav.experience": "Experience",
     "nav.education": "Education",
