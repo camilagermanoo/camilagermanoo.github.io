@@ -57,6 +57,11 @@ const translations = {
     "projects.soon": "Em breve",
     "projects.placeholderTitle": "Novos projetos chegando.",
     "projects.placeholderDescription": "Esta seção vai reunir os projetos que desenvolvi, com as tecnologias utilizadas e links para o código e para a versão online.",
+    "contact.eyebrow": "Contato",
+    "contact.title": "Vamos construir algo",
+    "contact.titleAccent": "juntos?",
+    "contact.text": "Estou aberta a oportunidades, projetos e trocas de conhecimento. Fique à vontade para entrar em contato.",
+    "contact.cta": "Enviar e-mail",
     "footer.statement": "Tecnologia bem feita começa com cuidado em cada detalhe. Se você procura alguém comprometida com isso, vamos conversar.",
     "footer.top": "Voltar ao topo",
     "footer.rights": "Todos os direitos reservados."
@@ -119,6 +124,11 @@ const translations = {
     "projects.soon": "Coming soon",
     "projects.placeholderTitle": "New projects on the way.",
     "projects.placeholderDescription": "This section will showcase the projects I've built, with the technologies used and links to the source code and live versions.",
+    "contact.eyebrow": "Contact",
+    "contact.title": "Shall we build something",
+    "contact.titleAccent": "together?",
+    "contact.text": "I'm open to opportunities, projects and knowledge sharing. Feel free to reach out.",
+    "contact.cta": "Send an email",
     "footer.statement": "Great technology starts with care for every detail. If you're looking for someone committed to that, let's talk.",
     "footer.top": "Back to top",
     "footer.rights": "All rights reserved."
