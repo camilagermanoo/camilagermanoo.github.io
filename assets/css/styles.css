@@ -874,6 +874,27 @@ html[lang="en"] .lang-toggle [data-lang="en"] {
   margin-bottom: 0.5rem;
 }
 
+.cell--compact {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.tech-list li {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--color-border-accent);
+  font: 500 0.75rem var(--font-sans);
+  letter-spacing: 0.04em;
+  color: var(--color-soft);
+}
+
 .statement--center {
   margin-top: 0;
   text-align: center;
