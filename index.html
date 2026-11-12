@@ -49,7 +49,8 @@
 <pre><code><span class="tk-key">const</span> <span class="tk-var">dev</span> = {
   nome: <span class="tk-str">"Camila Rodrigues"</span>,
   formacao: <span class="tk-str">"Análise e Desenvolvimento de Sistemas"</span>,
-  stack: [<span class="tk-str">"HTML"</span>, <span class="tk-str">"CSS"</span>, <span class="tk-str">"JavaScript"</span>, <span class="tk-str">"TypeScript"</span>],
+  stack: [<span class="tk-str">"React"</span>, <span class="tk-str">"TypeScript"</span>, <span class="tk-str">"Node.js"</span>, <span class="tk-str">"Tailwind CSS"</span>],
+  metodologia: <span class="tk-str">"Scrum"</span>,
   disponivel: <span class="tk-key">true</span>
 };</code></pre>
         </div>
@@ -64,7 +65,7 @@
             <small data-i18n="hero.stat2.label">públicas no currículo</small>
           </li>
           <li>
-            <strong>8<span data-i18n="hero.stat3.unit">tecnologias</span></strong>
+            <strong>11<span data-i18n="hero.stat3.unit">tecnologias</span></strong>
             <small data-i18n="hero.stat3.label">no meu dia a dia</small>
           </li>
         </ul>
@@ -74,7 +75,7 @@
         <span data-i18n="hero.title">Código bem feito.</span>
         <em class="accent" data-i18n="hero.titleAccent">Interfaces que encantam.</em>
       </h1>
-      <p class="hero__subtitle reveal" data-i18n="hero.subtitle">Sou Camila Rodrigues, desenvolvedora web formada em Análise e Desenvolvimento de Sistemas.</p>
+      <p class="hero__subtitle reveal" data-i18n="hero.subtitle">Sou Camila Rodrigues, desenvolvedora web com foco em React e TypeScript, formada em Análise e Desenvolvimento de Sistemas.</p>
       <a href="#projetos" class="button button--solid reveal" data-i18n="hero.cta">Ver projetos</a>
     </section>
 
@@ -96,7 +97,7 @@
             <p class="about__quote" data-i18n="about.quote">Tecnologia boa é a que facilita a vida de quem usa.</p>
             <p class="about__lead" data-i18n="about.p1">Sou formada em Análise e Desenvolvimento de Sistemas e comecei minha trajetória como estagiária de desenvolvimento no Tribunal de Contas da União, onde passei um ano e meio criando e mantendo sistemas web em um ambiente que exige qualidade e responsabilidade.</p>
             <p class="about__muted" data-i18n="about.p2">Depois, atuei na assistência de TI do Serpro, dando suporte a usuários e aprendendo a olhar para a tecnologia pelo lado de quem usa.</p>
-            <p class="about__strong" data-i18n="about.p3">Hoje, meu foco é construir interfaces modernas, acessíveis e responsivas, com código organizado e atenção a cada detalhe.</p>
+            <p class="about__strong" data-i18n="about.p3">Hoje, meu foco é construir interfaces modernas, acessíveis e responsivas com React e TypeScript. Uso ferramentas de IA no dia a dia para acelerar o desenvolvimento, sempre revisando e entendendo cada linha de código.</p>
           </div>
         </div>
 
@@ -140,7 +141,7 @@
             <h3 class="cell__title" data-i18n="experience.tcu.role">Estagiária de Desenvolvimento</h3>
             <p class="cell__meta">Tribunal de Contas da União <span data-i18n="experience.tcu.period">· 1 ano e 6 meses</span></p>
             <span class="cell__divider"></span>
-            <p class="cell__text" data-i18n="experience.tcu.description">Desenvolvimento e manutenção de sistemas web, colaborando com a equipe na criação de novas funcionalidades e melhorias.</p>
+            <p class="cell__text" data-i18n="experience.tcu.description">Desenvolvimento e manutenção de sistemas web com integração a APIs REST, em uma equipe ágil com Scrum, participando de dailies, plannings e entregas em sprints.</p>
           </article>
         </div>
       </div>
@@ -188,43 +189,44 @@
         <div class="cells cells--four">
           <article class="cell cell--compact reveal">
             <span class="cell__number">01</span>
-            <h3 class="cell__title">HTML5</h3>
-            <p class="cell__text" data-i18n="skills.html">Estrutura semântica e acessível.</p>
+            <h3 class="cell__title" data-i18n="skills.g1.title">Front-end</h3>
+            <p class="cell__text" data-i18n="skills.g1.text">Interfaces modernas, acessíveis e responsivas.</p>
+            <ul class="tech-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+            </ul>
           </article>
           <article class="cell cell--compact reveal">
             <span class="cell__number">02</span>
-            <h3 class="cell__title">CSS3</h3>
-            <p class="cell__text" data-i18n="skills.css">Layouts responsivos e animações.</p>
+            <h3 class="cell__title" data-i18n="skills.g2.title">Design e estilização</h3>
+            <p class="cell__text" data-i18n="skills.g2.text">Do protótipo ao layout final com consistência visual.</p>
+            <ul class="tech-list">
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>Figma</li>
+            </ul>
           </article>
           <article class="cell cell--compact reveal">
             <span class="cell__number">03</span>
-            <h3 class="cell__title">JavaScript</h3>
-            <p class="cell__text" data-i18n="skills.js">Interatividade e lógica no navegador.</p>
+            <h3 class="cell__title" data-i18n="skills.g3.title">Back-end e integração</h3>
+            <p class="cell__text" data-i18n="skills.g3.text">Comunicação entre front-end e servidor.</p>
+            <ul class="tech-list">
+              <li>Node.js</li>
+              <li>APIs REST</li>
+            </ul>
           </article>
           <article class="cell cell--compact reveal">
             <span class="cell__number">04</span>
-            <h3 class="cell__title">TypeScript</h3>
-            <p class="cell__text" data-i18n="skills.ts">Código tipado, seguro e escalável.</p>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">05</span>
-            <h3 class="cell__title">Node.js</h3>
-            <p class="cell__text" data-i18n="skills.node">JavaScript no servidor e ferramentas de build.</p>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">06</span>
-            <h3 class="cell__title">Bootstrap</h3>
-            <p class="cell__text" data-i18n="skills.bootstrap">Componentes prontos e grid responsivo.</p>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">07</span>
-            <h3 class="cell__title">Tailwind CSS</h3>
-            <p class="cell__text" data-i18n="skills.tailwind">Estilização ágil com classes utilitárias.</p>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">08</span>
-            <h3 class="cell__title">Figma</h3>
-            <p class="cell__text" data-i18n="skills.figma">Leitura de protótipos e handoff de design.</p>
+            <h3 class="cell__title" data-i18n="skills.g4.title">Ferramentas e métodos</h3>
+            <p class="cell__text" data-i18n="skills.g4.text">Trabalho em equipe com processos de mercado.</p>
+            <ul class="tech-list">
+              <li>Git &amp; GitHub</li>
+              <li>Scrum</li>
+              <li data-i18n="skills.ai">IA no desenvolvimento</li>
+            </ul>
           </article>
         </div>
       </div>
