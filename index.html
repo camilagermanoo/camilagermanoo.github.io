@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camila Rodrigues | Desenvolvedora Web</title>
-  <meta name="description" content="Portfólio e currículo de Camila Rodrigues, desenvolvedora web formada em Análise e Desenvolvimento de Sistemas.">
+  <title>Camila Rodrigues | Desenvolvedora Front-end</title>
+  <meta name="description" content="Camila Rodrigues, desenvolvedora front-end com foco em React e TypeScript, formada em Análise e Desenvolvimento de Sistemas pelo IESB.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,50,0;1,9..144,400..700,50,1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="header" id="header">
-    <nav class="nav">
-      <a href="#inicio" class="logo">Camila <em>Rodrigues</em></a>
+    <nav class="nav container">
+      <a href="#inicio" class="logo">Camila<span>.</span></a>
 
       <ul class="nav__links" id="nav-links">
         <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
-        <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
-        <li><a href="#formacao" data-i18n="nav.education">Formação</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Trajetória</a></li>
         <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
         <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
         <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
@@ -29,7 +28,6 @@
           <span data-lang="pt">PT</span>
           <span data-lang="en">EN</span>
         </button>
-        <a href="#contato" class="nav__cta" data-i18n="nav.cta">Fale comigo</a>
         <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
@@ -39,272 +37,193 @@
   </header>
 
   <main>
-    <section class="hero container" id="inicio">
-      <div class="hero__panel reveal">
-        <div class="hero__code" aria-hidden="true">
-          <div class="hero__code-bar">
-            <span></span><span></span><span></span>
-            <p>camila.ts</p>
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__hello reveal" data-i18n="hero.hello">Olá, eu sou a</p>
+          <h1 class="hero__name reveal">Camila <em>Rodrigues</em></h1>
+          <p class="hero__intro reveal" data-i18n="hero.intro">Desenvolvedora front-end com foco em React e TypeScript. Formada em Análise e Desenvolvimento de Sistemas pelo IESB, com passagem pelo Tribunal de Contas da União e pelo Serpro.</p>
+          <div class="hero__actions reveal">
+            <a href="#projetos" class="btn btn--primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+            <a href="#contato" class="btn btn--ghost" data-i18n="hero.ctaContact">Fale comigo</a>
           </div>
+          <p class="hero__status reveal">
+            <span class="hero__dot" aria-hidden="true"></span>
+            <span data-i18n="hero.status">Disponível para novas oportunidades</span>
+          </p>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <span class="hero__sun"></span>
+          <div class="code">
+            <div class="code__bar">
+              <span></span><span></span><span></span>
+              <p>camila.ts</p>
+            </div>
 <pre><code><span class="tk-key">const</span> <span class="tk-var">dev</span> = {
   nome: <span class="tk-str">"Camila Rodrigues"</span>,
-  formacao: <span class="tk-str">"Análise e Desenvolvimento de Sistemas"</span>,
-  stack: [<span class="tk-str">"React"</span>, <span class="tk-str">"TypeScript"</span>, <span class="tk-str">"Node.js"</span>, <span class="tk-str">"Tailwind CSS"</span>],
+  formacao: <span class="tk-str">"ADS · IESB"</span>,
+  stack: [<span class="tk-str">"React"</span>, <span class="tk-str">"TypeScript"</span>, <span class="tk-str">"Node.js"</span>],
   metodologia: <span class="tk-str">"Scrum"</span>,
   disponivel: <span class="tk-key">true</span>
 };</code></pre>
+          </div>
         </div>
-
-        <ul class="hero__stats">
-          <li>
-            <strong>1,5<span data-i18n="hero.stat1.unit">anos</span></strong>
-            <small data-i18n="hero.stat1.label">de estágio em desenvolvimento</small>
-          </li>
-          <li>
-            <strong>2<span data-i18n="hero.stat2.unit">instituições</span></strong>
-            <small data-i18n="hero.stat2.label">públicas no currículo</small>
-          </li>
-          <li>
-            <strong>11<span data-i18n="hero.stat3.unit">tecnologias</span></strong>
-            <small data-i18n="hero.stat3.label">no meu dia a dia</small>
-          </li>
-        </ul>
       </div>
 
-      <h1 class="hero__title reveal">
-        <span data-i18n="hero.title">Código bem feito.</span>
-        <em class="accent" data-i18n="hero.titleAccent">Interfaces que encantam.</em>
-      </h1>
-      <p class="hero__subtitle reveal" data-i18n="hero.subtitle">Sou Camila Rodrigues, desenvolvedora web com foco em React e TypeScript, formada em Análise e Desenvolvimento de Sistemas.</p>
-      <a href="#projetos" class="button button--solid reveal" data-i18n="hero.cta">Ver projetos</a>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>React</span><span>TypeScript</span><span>JavaScript</span><span>Node.js</span><span>Tailwind CSS</span><span>Figma</span><span>APIs REST</span><span>Scrum</span><span>Git</span>
+          <span>React</span><span>TypeScript</span><span>JavaScript</span><span>Node.js</span><span>Tailwind CSS</span><span>Figma</span><span>APIs REST</span><span>Scrum</span><span>Git</span>
+        </div>
+      </div>
     </section>
 
-    <section class="section section--dark" id="sobre">
+    <section class="section section--cream" id="sobre">
+      <div class="container about">
+        <figure class="about__photo reveal">
+          <span class="about__shape" aria-hidden="true"></span>
+          <img src="assets/img/camila-rodrigues.webp" alt="Foto de Camila Rodrigues" width="640" height="800" loading="lazy">
+        </figure>
+        <div class="about__text">
+          <p class="label reveal" data-i18n="about.label">Sobre mim</p>
+          <h2 class="title reveal">
+            <span data-i18n="about.title">Interfaces simples de usar e</span>
+            <em data-i18n="about.titleAccent">fáceis de manter.</em>
+          </h2>
+          <p class="reveal" data-i18n="about.p1">Comecei como estagiária de desenvolvimento no Tribunal de Contas da União, onde passei um ano e meio criando e mantendo sistemas web em uma equipe ágil, integrando o front-end a APIs REST.</p>
+          <p class="reveal" data-i18n="about.p2">Depois, atuei na assistência de TI do Serpro, dando suporte direto a usuários. Essa experiência me ensinou a olhar para a tecnologia pelo lado de quem usa.</p>
+          <p class="reveal" data-i18n="about.p3">Hoje trabalho principalmente com React e TypeScript, criando interfaces responsivas e acessíveis. Recentemente entreguei meu primeiro projeto para um cliente real: o site de um guia de turismo em Fernando de Noronha.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="experiencia">
       <div class="container">
-        <h2 class="section__title reveal">
-          <span data-i18n="about.title">Quem é</span>
-          <em class="accent">Camila Rodrigues</em>
+        <p class="label reveal" data-i18n="journey.label">Trajetória</p>
+        <h2 class="title reveal">
+          <span data-i18n="journey.title">Por onde eu</span>
+          <em data-i18n="journey.titleAccent">já passei.</em>
         </h2>
 
-        <div class="about">
-          <div class="about__frame reveal">
-            <div class="about__portrait">
-              <img src="assets/img/camila-rodrigues.webp" alt="Foto de Camila Rodrigues" width="640" height="800" loading="lazy">
-            </div>
+        <div class="journey">
+          <div class="journey__col">
+            <h3 class="journey__heading reveal" data-i18n="experience.label">Experiência</h3>
+            <ol class="timeline">
+              <li class="timeline__item reveal">
+                <h4 data-i18n="experience.serpro.role">Assistência de TI</h4>
+                <p class="timeline__place">Serpro</p>
+                <p data-i18n="experience.serpro.description">Suporte técnico a usuários, com diagnóstico e resolução de problemas de hardware, software e rede.</p>
+              </li>
+              <li class="timeline__item reveal">
+                <h4 data-i18n="experience.tcu.role">Estagiária de Desenvolvimento</h4>
+                <p class="timeline__place">Tribunal de Contas da União <span data-i18n="experience.tcu.period">· 1 ano e 6 meses</span></p>
+                <p data-i18n="experience.tcu.description">Desenvolvimento e manutenção de sistemas web com integração a APIs REST, em uma equipe ágil com Scrum, participando de dailies, plannings e entregas em sprints.</p>
+              </li>
+            </ol>
           </div>
-
-          <div class="about__content reveal">
-            <p class="about__quote" data-i18n="about.quote">Tecnologia boa é a que facilita a vida de quem usa.</p>
-            <p class="about__lead" data-i18n="about.p1">Sou formada em Análise e Desenvolvimento de Sistemas e comecei minha trajetória como estagiária de desenvolvimento no Tribunal de Contas da União, onde passei um ano e meio criando e mantendo sistemas web em um ambiente que exige qualidade e responsabilidade.</p>
-            <p class="about__muted" data-i18n="about.p2">Depois, atuei na assistência de TI do Serpro, dando suporte a usuários e aprendendo a olhar para a tecnologia pelo lado de quem usa.</p>
-            <p class="about__strong" data-i18n="about.p3">Hoje, meu foco é construir interfaces modernas, acessíveis e responsivas com React e TypeScript. Uso ferramentas de IA no dia a dia para acelerar o desenvolvimento, sempre revisando e entendendo cada linha de código.</p>
+          <div class="journey__col" id="formacao">
+            <h3 class="journey__heading reveal" data-i18n="education.label">Formação</h3>
+            <ol class="timeline">
+              <li class="timeline__item reveal">
+                <h4 data-i18n="education.degree.title">Análise e Desenvolvimento de Sistemas</h4>
+                <p class="timeline__place" data-i18n="education.degree.status">IESB · Tecnólogo · Concluído em julho de 2026</p>
+              </li>
+              <li class="timeline__item reveal">
+                <h4 data-i18n="education.courses.title">Cursos na Alura</h4>
+                <p class="timeline__place" data-i18n="education.courses.status">Formação complementar</p>
+                <p data-i18n="education.courses.description">Desenvolvimento web, front-end e boas práticas de programação.</p>
+              </li>
+            </ol>
           </div>
         </div>
+      </div>
+    </section>
 
-        <article class="statement reveal">
-          <div class="statement__body">
-            <h3 class="statement__title">
-              <span data-i18n="about.statement1">Desenvolvimento e suporte.</span>
-              <span data-i18n="about.statement2">Visão completa da tecnologia.</span>
-            </h3>
-            <p data-i18n="about.statementText">Unir a visão de quem resolve problemas reais no dia a dia com a de quem desenvolve soluções é o que guia o meu trabalho.</p>
+    <section class="section section--cream" id="habilidades">
+      <div class="container">
+        <p class="label reveal" data-i18n="skills.label">Habilidades</p>
+        <h2 class="title reveal">
+          <span data-i18n="skills.title">Ferramentas do</span>
+          <em data-i18n="skills.titleAccent">meu dia a dia.</em>
+        </h2>
+
+        <div class="skills">
+          <div class="skills__group reveal">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+            </ul>
           </div>
-          <ul class="statement__tags">
-            <li data-i18n="about.tag1">Análise e Desenvolvimento de Sistemas</li>
-            <li>TCU</li>
-            <li>Serpro</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section--textured" id="experiencia">
-      <div class="container">
-        <header class="section__header reveal">
-          <p class="eyebrow" data-i18n="experience.eyebrow">Trajetória profissional</p>
-          <h2 class="section__title">
-            <span data-i18n="experience.title">Onde construí</span>
-            <em class="accent" data-i18n="experience.titleAccent">minha experiência.</em>
-          </h2>
-        </header>
-
-        <div class="cells cells--two">
-          <article class="cell reveal">
-            <span class="cell__number">01</span>
-            <h3 class="cell__title" data-i18n="experience.serpro.role">Assistência de TI</h3>
-            <p class="cell__meta">Serpro</p>
-            <span class="cell__divider"></span>
-            <p class="cell__text" data-i18n="experience.serpro.description">Suporte técnico a usuários, com diagnóstico e resolução de problemas de hardware, software e rede.</p>
-          </article>
-          <article class="cell reveal">
-            <span class="cell__number">02</span>
-            <h3 class="cell__title" data-i18n="experience.tcu.role">Estagiária de Desenvolvimento</h3>
-            <p class="cell__meta">Tribunal de Contas da União <span data-i18n="experience.tcu.period">· 1 ano e 6 meses</span></p>
-            <span class="cell__divider"></span>
-            <p class="cell__text" data-i18n="experience.tcu.description">Desenvolvimento e manutenção de sistemas web com integração a APIs REST, em uma equipe ágil com Scrum, participando de dailies, plannings e entregas em sprints.</p>
-          </article>
+          <div class="skills__group reveal">
+            <h3 data-i18n="skills.design">Design e estilo</h3>
+            <ul class="chips">
+              <li>Tailwind CSS</li><li>Bootstrap</li><li>Figma</li>
+            </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-i18n="skills.backend">Back-end e integração</h3>
+            <ul class="chips">
+              <li>Node.js</li><li>APIs REST</li>
+            </ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3 data-i18n="skills.tools">Ferramentas e métodos</h3>
+            <ul class="chips">
+              <li>Git &amp; GitHub</li><li>Scrum</li><li data-i18n="skills.ai">IA no desenvolvimento</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark" id="formacao">
+    <section class="section section--paper" id="projetos">
       <div class="container">
-        <header class="section__header reveal">
-          <p class="eyebrow" data-i18n="education.eyebrow">Formação acadêmica</p>
-          <h2 class="section__title">
-            <span data-i18n="education.title">Aprender também é</span>
-            <em class="accent" data-i18n="education.titleAccent">parte do trabalho.</em>
-          </h2>
-        </header>
-
-        <div class="cells cells--two">
-          <article class="cell reveal">
-            <span class="cell__number">01</span>
-            <h3 class="cell__title" data-i18n="education.degree.title">Análise e Desenvolvimento de Sistemas</h3>
-            <p class="cell__meta" data-i18n="education.degree.status">IESB · Tecnólogo · Concluído em julho de 2026</p>
-            <span class="cell__divider"></span>
-            <p class="cell__text" data-i18n="education.degree.description">Base sólida em programação, banco de dados, engenharia de software e análise de sistemas.</p>
-          </article>
-          <article class="cell reveal">
-            <span class="cell__number">02</span>
-            <h3 class="cell__title" data-i18n="education.courses.title">Cursos na Alura</h3>
-            <p class="cell__meta" data-i18n="education.courses.status">Formação complementar</p>
-            <span class="cell__divider"></span>
-            <p class="cell__text" data-i18n="education.courses.description">Formações e cursos em desenvolvimento web, front-end e boas práticas de programação.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--dark" id="habilidades">
-      <div class="container">
-        <header class="section__header reveal">
-          <p class="eyebrow" data-i18n="skills.eyebrow">Stack</p>
-          <h2 class="section__title">
-            <span data-i18n="skills.title">Ferramentas do</span>
-            <em class="accent" data-i18n="skills.titleAccent">meu dia a dia.</em>
-          </h2>
-        </header>
-
-        <div class="cells cells--four">
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">01</span>
-            <h3 class="cell__title" data-i18n="skills.g1.title">Front-end</h3>
-            <p class="cell__text" data-i18n="skills.g1.text">Interfaces modernas, acessíveis e responsivas.</p>
-            <ul class="tech-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-            </ul>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">02</span>
-            <h3 class="cell__title" data-i18n="skills.g2.title">Design e estilização</h3>
-            <p class="cell__text" data-i18n="skills.g2.text">Do protótipo ao layout final com consistência visual.</p>
-            <ul class="tech-list">
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>Figma</li>
-            </ul>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">03</span>
-            <h3 class="cell__title" data-i18n="skills.g3.title">Back-end e integração</h3>
-            <p class="cell__text" data-i18n="skills.g3.text">Comunicação entre front-end e servidor.</p>
-            <ul class="tech-list">
-              <li>Node.js</li>
-              <li>APIs REST</li>
-            </ul>
-          </article>
-          <article class="cell cell--compact reveal">
-            <span class="cell__number">04</span>
-            <h3 class="cell__title" data-i18n="skills.g4.title">Ferramentas e métodos</h3>
-            <p class="cell__text" data-i18n="skills.g4.text">Trabalho em equipe com processos de mercado.</p>
-            <ul class="tech-list">
-              <li>Git &amp; GitHub</li>
-              <li>Scrum</li>
-              <li data-i18n="skills.ai">IA no desenvolvimento</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--textured" id="projetos">
-      <div class="container">
-        <header class="section__header section__header--center reveal">
-          <p class="eyebrow" data-i18n="projects.eyebrow">Portfólio</p>
-          <h2 class="section__title">
-            <span data-i18n="projects.title">Projetos</span>
-            <em class="accent" data-i18n="projects.titleAccent">em destaque.</em>
-          </h2>
-        </header>
+        <p class="label reveal" data-i18n="projects.label">Projetos</p>
+        <h2 class="title reveal">
+          <span data-i18n="projects.title">Trabalhos</span>
+          <em data-i18n="projects.titleAccent">em destaque.</em>
+        </h2>
 
         <article class="project reveal">
-          <a href="https://adriano-noronha.vercel.app/" class="project__media" target="_blank" rel="noopener noreferrer" aria-label="Abrir o site Adriano Noronha">
+          <a href="https://adriano-noronha.vercel.app/" class="project__image" target="_blank" rel="noopener noreferrer" aria-label="Abrir o site Adriano Noronha">
             <img src="assets/img/projetos/adriano-noronha.webp" alt="Página inicial do site Adriano Noronha, com o título A ilha contada por quem vive nela e uma foto do Morro Dois Irmãos" width="1200" height="750" loading="lazy">
           </a>
-          <div class="project__body">
-            <p class="eyebrow" data-i18n="projects.noronha.eyebrow">Cliente real · Novembro de 2026</p>
-            <h3 class="project__title">Adriano Noronha <em class="accent" data-i18n="projects.noronha.subtitle">Passeios na ilha</em></h3>
-            <p class="project__text" data-i18n="projects.noronha.description">Site para um guia de turismo credenciado de Fernando de Noronha, que apresenta todos os passeios por mar e por terra e transforma visitantes em reservas pelo WhatsApp.</p>
-            <ul class="project__features">
-              <li data-i18n="projects.noronha.f1">Catálogo com mais de 15 passeios, cada um com reserva direta pelo WhatsApp</li>
-              <li data-i18n="projects.noronha.f2">Planejador de viagem que sugere passeios conforme data e tamanho do grupo</li>
-              <li data-i18n="projects.noronha.f3">Roteiros por quantidade de dias e combos de passeios</li>
-              <li data-i18n="projects.noronha.f4">Site em três idiomas: português, inglês e espanhol</li>
+          <div class="project__info">
+            <p class="project__meta" data-i18n="projects.noronha.meta">Cliente real · Novembro de 2026</p>
+            <h3 class="project__title">Adriano Noronha</h3>
+            <p class="project__text" data-i18n="projects.noronha.description">Site para um guia de turismo credenciado de Fernando de Noronha. Apresenta mais de 15 passeios por mar e por terra, sugere roteiros conforme a data e o tamanho do grupo e leva o visitante direto para a reserva pelo WhatsApp, em português, inglês e espanhol.</p>
+            <ul class="chips chips--small">
+              <li>React</li><li>React Router</li><li>Vite</li><li>Tailwind CSS</li>
             </ul>
-            <ul class="tech-list">
-              <li>React</li>
-              <li>React Router</li>
-              <li>Vite</li>
-              <li>Tailwind CSS</li>
-            </ul>
-            <a href="https://adriano-noronha.vercel.app/" class="button button--solid project__cta" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.visit">Ver site</span> <span aria-hidden="true">↗</span></a>
+            <a href="https://adriano-noronha.vercel.app/" class="btn btn--primary" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.visit">Ver site</span> <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section section--dark contact" id="contato">
-      <div class="container contact__inner reveal">
-        <p class="eyebrow eyebrow--center" data-i18n="contact.eyebrow">Contato</p>
-        <h2 class="section__title">
-          <span data-i18n="contact.title">Vamos construir algo</span>
-          <em class="accent" data-i18n="contact.titleAccent">juntos?</em>
+    <section class="section contact" id="contato">
+      <div class="container contact__inner">
+        <p class="label label--light reveal" data-i18n="contact.label">Contato</p>
+        <h2 class="contact__title reveal">
+          <span data-i18n="contact.title">Vamos</span>
+          <em data-i18n="contact.titleAccent">conversar?</em>
         </h2>
-        <p class="contact__text" data-i18n="contact.text">Estou aberta a oportunidades, projetos e trocas de conhecimento. Fique à vontade para entrar em contato.</p>
-        <a href="mailto:camyrodrigues23@gmail.com" class="button button--solid" data-i18n="contact.cta">Enviar e-mail</a>
-        <ul class="link-row">
+        <p class="contact__text reveal" data-i18n="contact.text">Estou aberta a oportunidades e conversas sobre projetos. O jeito mais rápido de falar comigo é por e-mail.</p>
+        <a href="mailto:camyrodrigues23@gmail.com" class="btn btn--light reveal">camyrodrigues23@gmail.com</a>
+        <ul class="contact__links reveal">
           <li><a href="https://www.linkedin.com/in/camila-rodrigues-93196a241/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
           <li><a href="https://github.com/camilagermanoo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
-          <li><a href="mailto:camyrodrigues23@gmail.com" class="link-row__email">camyrodrigues23@gmail.com</a></li>
         </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div>
-          <a href="#inicio" class="logo logo--large">Camila <em>Rodrigues</em></a>
-          <span class="footer__line"></span>
-        </div>
-        <p class="footer__statement" data-i18n="footer.statement">Tecnologia bem feita começa com cuidado em cada detalhe. Se você procura alguém comprometida com isso, vamos conversar.</p>
-      </div>
-      <div class="footer__bottom">
-        <ul class="footer__links">
-          <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
-          <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
-          <li><a href="https://www.linkedin.com/in/camila-rodrigues-93196a241/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/camilagermanoo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
-        </ul>
-        <a href="#inicio" class="button button--outline" data-i18n="footer.top">Voltar ao topo</a>
-      </div>
-      <p class="footer__copy">&copy; <span id="year"></span> Camila Rodrigues. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo">Camila<span>.</span></a>
+      <p>&copy; <span id="year"></span> Camila Rodrigues</p>
+      <a href="#inicio" class="footer__top" data-i18n="footer.top">Voltar ao topo ↑</a>
     </div>
   </footer>
 
